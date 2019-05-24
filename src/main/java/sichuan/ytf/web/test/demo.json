@@ -1,0 +1,33 @@
+[
+	{
+		"name": "1.1.1、设置用户信息，name字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"mspId": "org1.com",
+					"privateKey": "-----BEGIN EC PRIVATE KEY-----\r\nMHcCAQEEINIij8OTZ/3x5O5HilriPpOIgySgaza6d9XB4n0FGuQooAoGCCqGSM49\r\nAwEHoUQDQgAE8jlbzghh3CFEDp16+u8FZ/AmiOCk+XoCuYciDgvy07krrggkk4+n\r\nL4Ka2HkZhn0GfLCIHuBR4wJVEKPBI92Qfg==\r\n-----END EC PRIVATE KEY-----\r\n",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIICCzCCAbKgAwIBAgIJAIcY14/EJA0kMAoGCCqGSM49BAMCMF4xGDAWBgNVBAMMD0lOVEVSTUVE\r\nSUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0Jl\r\naWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxOTAzMzgzNVoXDTI4MDYxOTAzMzgzNVowVzERMA8G\r\nA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJBgNV\r\nBAYTAkNOMREwDwYDVQQDDAhvcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPI5W84I\r\nYdwhRA6devrvBWfwJojgpPl6ArmHIg4L8tO5K64IJJOPpy+Cmth5GYZ9BnywiB7gUeMCVRCjwSPd\r\nkH6jYDBeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMB8GA1UdIwQYMBaAFMCd/ziJPLd9\r\n/RtsjY3WdRJujD/4MB0GA1UdDgQWBBSjtAYYkhV8k6smEXl0v+pAgv5mjjAKBggqhkjOPQQDAgNH\r\nADBEAiAptkJZ6ELPlCn1YZqnMyI+d0Wq9+pIJ7gv/yiZXbIWrAIgM8RzrVhDeCcevR2DVXlZ/mMn\r\nN2JIdd9Lj2wZ0963wQI=\n-----END CERTIFICATE-----"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "2 获取所有证书",
+		"path": "http://localhost:8080/cert-management-ra/certificates",
+		"type": "get",
+		"parameters": [],
+		"record": [
+			{
+				"name": "sn",
+				"prop": "data[0].sn"
+			}
+		],
+		"expCode": 200
+	}
+]

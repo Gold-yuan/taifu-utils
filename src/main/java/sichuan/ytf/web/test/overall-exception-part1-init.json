@@ -1,0 +1,1063 @@
+[
+	{
+		"name": "1.1.1、设置用户信息，name字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"mspId": "org1.com",
+					"privateKey": "-----BEGIN EC PRIVATE KEY-----\r\nMHcCAQEEINIij8OTZ/3x5O5HilriPpOIgySgaza6d9XB4n0FGuQooAoGCCqGSM49\r\nAwEHoUQDQgAE8jlbzghh3CFEDp16+u8FZ/AmiOCk+XoCuYciDgvy07krrggkk4+n\r\nL4Ka2HkZhn0GfLCIHuBR4wJVEKPBI92Qfg==\r\n-----END EC PRIVATE KEY-----\r\n",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIICCzCCAbKgAwIBAgIJAIcY14/EJA0kMAoGCCqGSM49BAMCMF4xGDAWBgNVBAMMD0lOVEVSTUVE\r\nSUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0Jl\r\naWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxOTAzMzgzNVoXDTI4MDYxOTAzMzgzNVowVzERMA8G\r\nA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJBgNV\r\nBAYTAkNOMREwDwYDVQQDDAhvcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPI5W84I\r\nYdwhRA6devrvBWfwJojgpPl6ArmHIg4L8tO5K64IJJOPpy+Cmth5GYZ9BnywiB7gUeMCVRCjwSPd\r\nkH6jYDBeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMB8GA1UdIwQYMBaAFMCd/ziJPLd9\r\n/RtsjY3WdRJujD/4MB0GA1UdDgQWBBSjtAYYkhV8k6smEXl0v+pAgv5mjjAKBggqhkjOPQQDAgNH\r\nADBEAiAptkJZ6ELPlCn1YZqnMyI+d0Wq9+pIJ7gv/yiZXbIWrAIgM8RzrVhDeCcevR2DVXlZ/mMn\r\nN2JIdd9Lj2wZ0963wQI=\n-----END CERTIFICATE-----"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "1.1.2、设置用户信息，privateKey字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"name": "endorserAdmin",
+					"mspId": "org1.com",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIICCzCCAbKgAwIBAgIJAIcY14/EJA0kMAoGCCqGSM49BAMCMF4xGDAWBgNVBAMMD0lOVEVSTUVE\r\nSUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0Jl\r\naWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxOTAzMzgzNVoXDTI4MDYxOTAzMzgzNVowVzERMA8G\r\nA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJBgNV\r\nBAYTAkNOMREwDwYDVQQDDAhvcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPI5W84I\r\nYdwhRA6devrvBWfwJojgpPl6ArmHIg4L8tO5K64IJJOPpy+Cmth5GYZ9BnywiB7gUeMCVRCjwSPd\r\nkH6jYDBeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMB8GA1UdIwQYMBaAFMCd/ziJPLd9\r\n/RtsjY3WdRJujD/4MB0GA1UdDgQWBBSjtAYYkhV8k6smEXl0v+pAgv5mjjAKBggqhkjOPQQDAgNH\r\nADBEAiAptkJZ6ELPlCn1YZqnMyI+d0Wq9+pIJ7gv/yiZXbIWrAIgM8RzrVhDeCcevR2DVXlZ/mMn\r\nN2JIdd9Lj2wZ0963wQI=\n-----END CERTIFICATE-----"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "1.1.3、设置用户信息，certificate字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"name": "endorserAdmin",
+					"mspId": "org1.com",
+					"privateKey": "-----BEGIN EC PRIVATE KEY-----\r\nMHcCAQEEINIij8OTZ/3x5O5HilriPpOIgySgaza6d9XB4n0FGuQooAoGCCqGSM49\r\nAwEHoUQDQgAE8jlbzghh3CFEDp16+u8FZ/AmiOCk+XoCuYciDgvy07krrggkk4+n\r\nL4Ka2HkZhn0GfLCIHuBR4wJVEKPBI92Qfg==\r\n-----END EC PRIVATE KEY-----\r\n"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "1.1.4、设置用户信息，私钥格式不正确，应返回结果：证书、私钥格式不正确",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"name": "endorserAdmin",
+					"mspId": "org1.com",
+					"privateKey": "bad-key",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIICCzCCAbKgAwIBAgIJAIcY14/EJA0kMAoGCCqGSM49BAMCMF4xGDAWBgNVBAMMD0lOVEVSTUVE\r\nSUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0Jl\r\naWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxOTAzMzgzNVoXDTI4MDYxOTAzMzgzNVowVzERMA8G\r\nA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJBgNV\r\nBAYTAkNOMREwDwYDVQQDDAhvcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPI5W84I\r\nYdwhRA6devrvBWfwJojgpPl6ArmHIg4L8tO5K64IJJOPpy+Cmth5GYZ9BnywiB7gUeMCVRCjwSPd\r\nkH6jYDBeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMB8GA1UdIwQYMBaAFMCd/ziJPLd9\r\n/RtsjY3WdRJujD/4MB0GA1UdDgQWBBSjtAYYkhV8k6smEXl0v+pAgv5mjjAKBggqhkjOPQQDAgNH\r\nADBEAiAptkJZ6ELPlCn1YZqnMyI+d0Wq9+pIJ7gv/yiZXbIWrAIgM8RzrVhDeCcevR2DVXlZ/mMn\r\nN2JIdd9Lj2wZ0963wQI=\n-----END CERTIFICATE-----"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4201
+	},
+	{
+		"name": "1.1.5、设置用户信息，证书格式不正确，应返回结果：证书、私钥格式不正确",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"name": "endorserAdmin",
+					"mspId": "org1.com",
+					"privateKey": "-----BEGIN EC PRIVATE KEY-----\r\nMHcCAQEEINIij8OTZ/3x5O5HilriPpOIgySgaza6d9XB4n0FGuQooAoGCCqGSM49\r\nAwEHoUQDQgAE8jlbzghh3CFEDp16+u8FZ/AmiOCk+XoCuYciDgvy07krrggkk4+n\r\nL4Ka2HkZhn0GfLCIHuBR4wJVEKPBI92Qfg==\r\n-----END EC PRIVATE KEY-----\r\n",
+					"certificate": "bad-cert"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4201
+	},
+	{
+		"name": "1.1.6、设置用户信息，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/admins/user",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "user",
+				"data": {
+					"name": "endorserAdmin",
+					"mspId": "org1.com",
+					"privateKey": "-----BEGIN EC PRIVATE KEY-----\r\nMHcCAQEEINIij8OTZ/3x5O5HilriPpOIgySgaza6d9XB4n0FGuQooAoGCCqGSM49\r\nAwEHoUQDQgAE8jlbzghh3CFEDp16+u8FZ/AmiOCk+XoCuYciDgvy07krrggkk4+n\r\nL4Ka2HkZhn0GfLCIHuBR4wJVEKPBI92Qfg==\r\n-----END EC PRIVATE KEY-----\r\n",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIICCzCCAbKgAwIBAgIJAIcY14/EJA0kMAoGCCqGSM49BAMCMF4xGDAWBgNVBAMMD0lOVEVSTUVE\r\nSUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0Jl\r\naWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxOTAzMzgzNVoXDTI4MDYxOTAzMzgzNVowVzERMA8G\r\nA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJBgNV\r\nBAYTAkNOMREwDwYDVQQDDAhvcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPI5W84I\r\nYdwhRA6devrvBWfwJojgpPl6ArmHIg4L8tO5K64IJJOPpy+Cmth5GYZ9BnywiB7gUeMCVRCjwSPd\r\nkH6jYDBeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMB8GA1UdIwQYMBaAFMCd/ziJPLd9\r\n/RtsjY3WdRJujD/4MB0GA1UdDgQWBBSjtAYYkhV8k6smEXl0v+pAgv5mjjAKBggqhkjOPQQDAgNH\r\nADBEAiAptkJZ6ELPlCn1YZqnMyI+d0Wq9+pIJ7gv/yiZXbIWrAIgM8RzrVhDeCcevR2DVXlZ/mMn\r\nN2JIdd9Lj2wZ0963wQI=\n-----END CERTIFICATE-----"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.2.1、设置参与方连接信息，host、mspId、port字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "1.2.2、设置参与方连接信息，port不是数字，应返回结果：数据类型错误",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "org1.com",
+					"port": "8090aaas"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4002
+	},
+	{
+		"name": "1.2.3、设置参与方连接信息，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.2.4、设置参与方连接信息，mspId重复，应返回结果：参与方已存在",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4203
+	},
+	{
+		"name": "1.3.1、更新参与方连接信息，host、mspId、port字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "1.3.2、更新参与方连接信息，port不是数字，应返回结果：数据类型错误",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "org1.com",
+					"port": "8090aaas"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4002
+	},
+	{
+		"name": "1.3.3、更新参与方连接信息，mspId不存在，应返回结果：参与方未找到",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "xxxxxx",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4202
+	},
+	{
+		"name": "1.3.4、更新参与方连接信息，成功",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "127.0.0.1",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.4、  获取一个参与方连接信息",
+		"path": "http://localhost:8090/channel-management/admins/org1.com",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.5、  获取所有参与方连接信息",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.6.1、删除参与方连接信息，mspId为空，应返回结果：未找到方法",
+		"path": "http://localhost:8090/channel-management/admins/",
+		"type": "delete",
+		"parameters": [],
+		"record": [],
+		"expCode": 500
+	},
+	{
+		"name": "1.6.2、删除参与方连接信息，mspId不存在于数据库，应返回结果：参与方未找到",
+		"path": "http://localhost:8090/channel-management/admins/xxxxxx",
+		"type": "delete",
+		"parameters": [],
+		"record": [],
+		"expCode": 4202
+	},
+	{
+		"name": "1.6.3、删除参与方连接信息，应返回结果：删除成功",
+		"path": "http://localhost:8090/channel-management/admins/org1.com",
+		"type": "delete",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.7.1、连接参与方，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/admins/test",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "localhost",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "1.7.2、连接参与方，应返回结果：连接其他参与方失败",
+		"path": "http://localhost:8090/channel-management/admins/test",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "admin",
+				"data": {
+					"host": "bad-host",
+					"mspId": "org1.com",
+					"port": 8090
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4501
+	},
+	{
+		"name": "2.1.1、设置msp，mspId、adminCert、caCert、tlsCaCert字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "",
+					"adminCerts": [],
+					"caCerts": [],
+					"intermediateCerts": [],
+					"tlsCaCerts": [],
+					"tlsIntermediateCerts": [],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "2.1.2、设置msp成功",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "org1.com",
+					"adminCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICCzCCAbGgAwIBAgIINNFqI+LQgR0wCgYIKoZIzj0EAwIwXjEYMBYGA1UEAwwPSU5URVJNRURJ\r\nQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1NDE5WhcNMjgwNjEyMDM1NDE5WjBXMREwDwYD\r\nVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UE\r\nBhMCQ04xETAPBgNVBAMMCG9yZzEuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu0OSJQPo\r\nic/Gd24whsy4iQFV4oLbinZnMSR8N5aGvAlgJrJMocYM6AOHvUrZq4XZkCyF351JYviJ4HR8DqQO\r\nOaNgMF4wDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHwYDVR0jBBgwFoAU2pF2/CDET94s\r\ni6CjKnV1F2PLie4wHQYDVR0OBBYEFNArC7cLNFgXKHDXfWebkaFW/z9FMAoGCCqGSM49BAMCA0gA\r\nMEUCIHtoXFWcYdd9KAUBJFmY1GnIIOYgKuONMHMmSINH+k/yAiEAuQdR7kkFEa78qoI0DsbiUbLt\r\nH9ih2AwPQyE9YrqTyZw=\n-----END CERTIFICATE-----"
+					],
+					"caCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICGDCCAb6gAwIBAgIIaFt5ALI4JM8wCgYIKoZIzj0EAwIwVjEQMA4GA1UEAwwHUk9PVCBDQTER\r\nMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJ\r\nBgNVBAYTAkNOMCAXDTE4MDYxMjAzNTE0NFoYDzIxMTgwNjEyMDM1MTQ0WjBWMRAwDgYDVQQDDAdS\r\nT09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATVtBd/2E9B523iF06I\r\nFijCDrDDmPEwUJVg12+x363TvFMUAPy++SZ5RwNE+EGaubbKWryyHpLLsaQfGbB1koOFo3QwcjAP\r\nBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUAMB8GA1UdIwQY\r\nMBaAFOywQHm+EeZeClxxG/UZWLWLlyWvMB0GA1UdDgQWBBTssEB5vhHmXgpccRv1GVi1i5clrzAK\r\nBggqhkjOPQQDAgNIADBFAiAZGZE/hc/Sz4YNyO82x5b5O1Cyyl0gcGkLusHSPPFlCgIhAO5+XM9F\r\ng0SxGFpXak5iScVNIzwLKwKHkcZdQIBhOAFS\n-----END CERTIFICATE-----"
+					],
+					"intermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIJANi+rZL2Q5pmMAoGCCqGSM49BAMCMFYxEDAOBgNVBAMMB1JPT1QgQ0Ex\r\nETAPBgNVBAoMCG9yZzEuY29tMRAwDgYDVQQHDAdCZWlqaW5nMRAwDgYDVQQIDAdCZWlqaW5nMQsw\r\nCQYDVQQGEwJDTjAeFw0xODA2MTIwMzUxNDRaFw0yODA2MTIwMzUxNDRaMF4xGDAWBgNVBAMMD0lO\r\nVEVSTUVESUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNV\r\nBAgMB0JlaWppbmcxCzAJBgNVBAYTAkNOMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWkh/NumY\r\nc9VjeJx3agnW1E9okrsWxQNEbBRtMOEzrz3tuSTAdhlvVeTUVZPR2/fX0lT1mGbaIZ0aT6Bcl9Wv\r\nZqN3MHUwEgYDVR0TAQH/BAgwBgEB/wIBAzAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0lBAgwBgYEVR0l\r\nADAfBgNVHSMEGDAWgBTssEB5vhHmXgpccRv1GVi1i5clrzAdBgNVHQ4EFgQU2pF2/CDET94si6Cj\r\nKnV1F2PLie4wCgYIKoZIzj0EAwIDSAAwRQIhAJ8X9BwzHKzXw6loHyEgfHevqzL5V/wKZ5+l3ebE\r\nCTAuAiB/YboSAy7zH1dB6tBudGL/yVZHMsS/93Avf9A8MjUXaw==\n-----END CERTIFICATE-----"
+					],
+					"tlsCaCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICITCCAcegAwIBAgIJAOrwQJ6VJxPBMAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wIBcNMTgwNjEyMDM1MTQ0WhgPMjExODA2MTIwMzUxNDRaMFoxFDASBgNV\r\nBAMMC1RMUyBST09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4G\r\nA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQSzCKP\r\npPy2+URp/dr3gxBeOQCaaHjU3pQoriuTvAP/SBvrdRJCInepPaKzilREScWNZDappZoVBLO92S9J\r\nWYawo3QwcjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUA\r\nMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBQhmOU97XM3XBzGGloz\r\ncJsGEBXZFzAKBggqhkjOPQQDAgNIADBFAiAnvfLU+iDZzQlsMAZQ3DfOOQNIEhElbWi5xbkyqgor\r\nfAIhALvTL2KmaXutoDzjlL3saWPK96aCiWB+gZiGv+rW8TX0\n-----END CERTIFICATE-----"
+					],
+					"tlsIntermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICKzCCAdCgAwIBAgIJALYA+q5Lw6x4MAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1MTQ0WhcNMjgwNjEyMDM1MTQ0WjBiMRwwGgYDVQQD\r\nDBNUTFMgSU5URVJNRURJQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamlu\r\nZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC\r\nAATQka7O4p8N1FbtBSbtFIsb9KztAgbWdCsYduO0y0h+ttTLtgM1qLdCLnH4jQCzolyep0qL36QP\r\nx/MIdSqzSij+o3cwdTASBgNVHRMBAf8ECDAGAQH/AgEDMA4GA1UdDwEB/wQEAwIBhjAPBgNVHSUE\r\nCDAGBgRVHSUAMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBR0V4PS\r\nwrY9KGq3BxGxgM88nkrs3jAKBggqhkjOPQQDAgNJADBGAiEA4T6ehq4F5fA6wbC9iT9v3BNhpsw/\r\ngxgwIpJBO09YYugCIQCZcLvDfkTQz/hdqHNQtSYrEAcl8ZOTWp8RDqxuGepo1A==\n-----END CERTIFICATE-----"
+					],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "2.1.3、设置msp，mspId字段重复，应返回结果：MSP已存在",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "org1.com",
+					"adminCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICCzCCAbGgAwIBAgIINNFqI+LQgR0wCgYIKoZIzj0EAwIwXjEYMBYGA1UEAwwPSU5URVJNRURJ\r\nQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1NDE5WhcNMjgwNjEyMDM1NDE5WjBXMREwDwYD\r\nVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UE\r\nBhMCQ04xETAPBgNVBAMMCG9yZzEuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu0OSJQPo\r\nic/Gd24whsy4iQFV4oLbinZnMSR8N5aGvAlgJrJMocYM6AOHvUrZq4XZkCyF351JYviJ4HR8DqQO\r\nOaNgMF4wDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHwYDVR0jBBgwFoAU2pF2/CDET94s\r\ni6CjKnV1F2PLie4wHQYDVR0OBBYEFNArC7cLNFgXKHDXfWebkaFW/z9FMAoGCCqGSM49BAMCA0gA\r\nMEUCIHtoXFWcYdd9KAUBJFmY1GnIIOYgKuONMHMmSINH+k/yAiEAuQdR7kkFEa78qoI0DsbiUbLt\r\nH9ih2AwPQyE9YrqTyZw=\n-----END CERTIFICATE-----"
+					],
+					"caCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICGDCCAb6gAwIBAgIIaFt5ALI4JM8wCgYIKoZIzj0EAwIwVjEQMA4GA1UEAwwHUk9PVCBDQTER\r\nMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJ\r\nBgNVBAYTAkNOMCAXDTE4MDYxMjAzNTE0NFoYDzIxMTgwNjEyMDM1MTQ0WjBWMRAwDgYDVQQDDAdS\r\nT09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATVtBd/2E9B523iF06I\r\nFijCDrDDmPEwUJVg12+x363TvFMUAPy++SZ5RwNE+EGaubbKWryyHpLLsaQfGbB1koOFo3QwcjAP\r\nBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUAMB8GA1UdIwQY\r\nMBaAFOywQHm+EeZeClxxG/UZWLWLlyWvMB0GA1UdDgQWBBTssEB5vhHmXgpccRv1GVi1i5clrzAK\r\nBggqhkjOPQQDAgNIADBFAiAZGZE/hc/Sz4YNyO82x5b5O1Cyyl0gcGkLusHSPPFlCgIhAO5+XM9F\r\ng0SxGFpXak5iScVNIzwLKwKHkcZdQIBhOAFS\n-----END CERTIFICATE-----"
+					],
+					"intermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIJANi+rZL2Q5pmMAoGCCqGSM49BAMCMFYxEDAOBgNVBAMMB1JPT1QgQ0Ex\r\nETAPBgNVBAoMCG9yZzEuY29tMRAwDgYDVQQHDAdCZWlqaW5nMRAwDgYDVQQIDAdCZWlqaW5nMQsw\r\nCQYDVQQGEwJDTjAeFw0xODA2MTIwMzUxNDRaFw0yODA2MTIwMzUxNDRaMF4xGDAWBgNVBAMMD0lO\r\nVEVSTUVESUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNV\r\nBAgMB0JlaWppbmcxCzAJBgNVBAYTAkNOMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWkh/NumY\r\nc9VjeJx3agnW1E9okrsWxQNEbBRtMOEzrz3tuSTAdhlvVeTUVZPR2/fX0lT1mGbaIZ0aT6Bcl9Wv\r\nZqN3MHUwEgYDVR0TAQH/BAgwBgEB/wIBAzAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0lBAgwBgYEVR0l\r\nADAfBgNVHSMEGDAWgBTssEB5vhHmXgpccRv1GVi1i5clrzAdBgNVHQ4EFgQU2pF2/CDET94si6Cj\r\nKnV1F2PLie4wCgYIKoZIzj0EAwIDSAAwRQIhAJ8X9BwzHKzXw6loHyEgfHevqzL5V/wKZ5+l3ebE\r\nCTAuAiB/YboSAy7zH1dB6tBudGL/yVZHMsS/93Avf9A8MjUXaw==\n-----END CERTIFICATE-----"
+					],
+					"tlsCaCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICITCCAcegAwIBAgIJAOrwQJ6VJxPBMAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wIBcNMTgwNjEyMDM1MTQ0WhgPMjExODA2MTIwMzUxNDRaMFoxFDASBgNV\r\nBAMMC1RMUyBST09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4G\r\nA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQSzCKP\r\npPy2+URp/dr3gxBeOQCaaHjU3pQoriuTvAP/SBvrdRJCInepPaKzilREScWNZDappZoVBLO92S9J\r\nWYawo3QwcjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUA\r\nMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBQhmOU97XM3XBzGGloz\r\ncJsGEBXZFzAKBggqhkjOPQQDAgNIADBFAiAnvfLU+iDZzQlsMAZQ3DfOOQNIEhElbWi5xbkyqgor\r\nfAIhALvTL2KmaXutoDzjlL3saWPK96aCiWB+gZiGv+rW8TX0\n-----END CERTIFICATE-----"
+					],
+					"tlsIntermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICKzCCAdCgAwIBAgIJALYA+q5Lw6x4MAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1MTQ0WhcNMjgwNjEyMDM1MTQ0WjBiMRwwGgYDVQQD\r\nDBNUTFMgSU5URVJNRURJQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamlu\r\nZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC\r\nAATQka7O4p8N1FbtBSbtFIsb9KztAgbWdCsYduO0y0h+ttTLtgM1qLdCLnH4jQCzolyep0qL36QP\r\nx/MIdSqzSij+o3cwdTASBgNVHRMBAf8ECDAGAQH/AgEDMA4GA1UdDwEB/wQEAwIBhjAPBgNVHSUE\r\nCDAGBgRVHSUAMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBR0V4PS\r\nwrY9KGq3BxGxgM88nkrs3jAKBggqhkjOPQQDAgNJADBGAiEA4T6ehq4F5fA6wbC9iT9v3BNhpsw/\r\ngxgwIpJBO09YYugCIQCZcLvDfkTQz/hdqHNQtSYrEAcl8ZOTWp8RDqxuGepo1A==\n-----END CERTIFICATE-----"
+					],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4216
+	},
+	{
+		"name": "2.2.1、更新msp，mspId、adminCert、caCert、tlsCaCert字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "",
+					"adminCerts": [],
+					"caCerts": [],
+					"intermediateCerts": [],
+					"tlsCaCerts": [],
+					"tlsIntermediateCerts": [],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "2.2.2、更新msp，mspId不存在数据库，应返回结果：MSP未找到",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "bad-mspId",
+					"adminCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICCzCCAbGgAwIBAgIINNFqI+LQgR0wCgYIKoZIzj0EAwIwXjEYMBYGA1UEAwwPSU5URVJNRURJ\r\nQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1NDE5WhcNMjgwNjEyMDM1NDE5WjBXMREwDwYD\r\nVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UE\r\nBhMCQ04xETAPBgNVBAMMCG9yZzEuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu0OSJQPo\r\nic/Gd24whsy4iQFV4oLbinZnMSR8N5aGvAlgJrJMocYM6AOHvUrZq4XZkCyF351JYviJ4HR8DqQO\r\nOaNgMF4wDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHwYDVR0jBBgwFoAU2pF2/CDET94s\r\ni6CjKnV1F2PLie4wHQYDVR0OBBYEFNArC7cLNFgXKHDXfWebkaFW/z9FMAoGCCqGSM49BAMCA0gA\r\nMEUCIHtoXFWcYdd9KAUBJFmY1GnIIOYgKuONMHMmSINH+k/yAiEAuQdR7kkFEa78qoI0DsbiUbLt\r\nH9ih2AwPQyE9YrqTyZw=\n-----END CERTIFICATE-----"
+					],
+					"caCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICGDCCAb6gAwIBAgIIaFt5ALI4JM8wCgYIKoZIzj0EAwIwVjEQMA4GA1UEAwwHUk9PVCBDQTER\r\nMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJ\r\nBgNVBAYTAkNOMCAXDTE4MDYxMjAzNTE0NFoYDzIxMTgwNjEyMDM1MTQ0WjBWMRAwDgYDVQQDDAdS\r\nT09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATVtBd/2E9B523iF06I\r\nFijCDrDDmPEwUJVg12+x363TvFMUAPy++SZ5RwNE+EGaubbKWryyHpLLsaQfGbB1koOFo3QwcjAP\r\nBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUAMB8GA1UdIwQY\r\nMBaAFOywQHm+EeZeClxxG/UZWLWLlyWvMB0GA1UdDgQWBBTssEB5vhHmXgpccRv1GVi1i5clrzAK\r\nBggqhkjOPQQDAgNIADBFAiAZGZE/hc/Sz4YNyO82x5b5O1Cyyl0gcGkLusHSPPFlCgIhAO5+XM9F\r\ng0SxGFpXak5iScVNIzwLKwKHkcZdQIBhOAFS\n-----END CERTIFICATE-----"
+					],
+					"intermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIJANi+rZL2Q5pmMAoGCCqGSM49BAMCMFYxEDAOBgNVBAMMB1JPT1QgQ0Ex\r\nETAPBgNVBAoMCG9yZzEuY29tMRAwDgYDVQQHDAdCZWlqaW5nMRAwDgYDVQQIDAdCZWlqaW5nMQsw\r\nCQYDVQQGEwJDTjAeFw0xODA2MTIwMzUxNDRaFw0yODA2MTIwMzUxNDRaMF4xGDAWBgNVBAMMD0lO\r\nVEVSTUVESUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNV\r\nBAgMB0JlaWppbmcxCzAJBgNVBAYTAkNOMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWkh/NumY\r\nc9VjeJx3agnW1E9okrsWxQNEbBRtMOEzrz3tuSTAdhlvVeTUVZPR2/fX0lT1mGbaIZ0aT6Bcl9Wv\r\nZqN3MHUwEgYDVR0TAQH/BAgwBgEB/wIBAzAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0lBAgwBgYEVR0l\r\nADAfBgNVHSMEGDAWgBTssEB5vhHmXgpccRv1GVi1i5clrzAdBgNVHQ4EFgQU2pF2/CDET94si6Cj\r\nKnV1F2PLie4wCgYIKoZIzj0EAwIDSAAwRQIhAJ8X9BwzHKzXw6loHyEgfHevqzL5V/wKZ5+l3ebE\r\nCTAuAiB/YboSAy7zH1dB6tBudGL/yVZHMsS/93Avf9A8MjUXaw==\n-----END CERTIFICATE-----"
+					],
+					"tlsCaCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICITCCAcegAwIBAgIJAOrwQJ6VJxPBMAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wIBcNMTgwNjEyMDM1MTQ0WhgPMjExODA2MTIwMzUxNDRaMFoxFDASBgNV\r\nBAMMC1RMUyBST09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4G\r\nA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQSzCKP\r\npPy2+URp/dr3gxBeOQCaaHjU3pQoriuTvAP/SBvrdRJCInepPaKzilREScWNZDappZoVBLO92S9J\r\nWYawo3QwcjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUA\r\nMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBQhmOU97XM3XBzGGloz\r\ncJsGEBXZFzAKBggqhkjOPQQDAgNIADBFAiAnvfLU+iDZzQlsMAZQ3DfOOQNIEhElbWi5xbkyqgor\r\nfAIhALvTL2KmaXutoDzjlL3saWPK96aCiWB+gZiGv+rW8TX0\n-----END CERTIFICATE-----"
+					],
+					"tlsIntermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICKzCCAdCgAwIBAgIJALYA+q5Lw6x4MAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1MTQ0WhcNMjgwNjEyMDM1MTQ0WjBiMRwwGgYDVQQD\r\nDBNUTFMgSU5URVJNRURJQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamlu\r\nZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC\r\nAATQka7O4p8N1FbtBSbtFIsb9KztAgbWdCsYduO0y0h+ttTLtgM1qLdCLnH4jQCzolyep0qL36QP\r\nx/MIdSqzSij+o3cwdTASBgNVHRMBAf8ECDAGAQH/AgEDMA4GA1UdDwEB/wQEAwIBhjAPBgNVHSUE\r\nCDAGBgRVHSUAMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBR0V4PS\r\nwrY9KGq3BxGxgM88nkrs3jAKBggqhkjOPQQDAgNJADBGAiEA4T6ehq4F5fA6wbC9iT9v3BNhpsw/\r\ngxgwIpJBO09YYugCIQCZcLvDfkTQz/hdqHNQtSYrEAcl8ZOTWp8RDqxuGepo1A==\n-----END CERTIFICATE-----"
+					],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4215
+	},
+	{
+		"name": "2.2.3、更新msp成功",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"mspId": "org1.com",
+					"adminCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICCzCCAbGgAwIBAgIINNFqI+LQgR0wCgYIKoZIzj0EAwIwXjEYMBYGA1UEAwwPSU5URVJNRURJ\r\nQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1NDE5WhcNMjgwNjEyMDM1NDE5WjBXMREwDwYD\r\nVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UE\r\nBhMCQ04xETAPBgNVBAMMCG9yZzEuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu0OSJQPo\r\nic/Gd24whsy4iQFV4oLbinZnMSR8N5aGvAlgJrJMocYM6AOHvUrZq4XZkCyF351JYviJ4HR8DqQO\r\nOaNgMF4wDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHwYDVR0jBBgwFoAU2pF2/CDET94s\r\ni6CjKnV1F2PLie4wHQYDVR0OBBYEFNArC7cLNFgXKHDXfWebkaFW/z9FMAoGCCqGSM49BAMCA0gA\r\nMEUCIHtoXFWcYdd9KAUBJFmY1GnIIOYgKuONMHMmSINH+k/yAiEAuQdR7kkFEa78qoI0DsbiUbLt\r\nH9ih2AwPQyE9YrqTyZw=\n-----END CERTIFICATE-----"
+					],
+					"caCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICGDCCAb6gAwIBAgIIaFt5ALI4JM8wCgYIKoZIzj0EAwIwVjEQMA4GA1UEAwwHUk9PVCBDQTER\r\nMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJ\r\nBgNVBAYTAkNOMCAXDTE4MDYxMjAzNTE0NFoYDzIxMTgwNjEyMDM1MTQ0WjBWMRAwDgYDVQQDDAdS\r\nT09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVp\r\namluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATVtBd/2E9B523iF06I\r\nFijCDrDDmPEwUJVg12+x363TvFMUAPy++SZ5RwNE+EGaubbKWryyHpLLsaQfGbB1koOFo3QwcjAP\r\nBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUAMB8GA1UdIwQY\r\nMBaAFOywQHm+EeZeClxxG/UZWLWLlyWvMB0GA1UdDgQWBBTssEB5vhHmXgpccRv1GVi1i5clrzAK\r\nBggqhkjOPQQDAgNIADBFAiAZGZE/hc/Sz4YNyO82x5b5O1Cyyl0gcGkLusHSPPFlCgIhAO5+XM9F\r\ng0SxGFpXak5iScVNIzwLKwKHkcZdQIBhOAFS\n-----END CERTIFICATE-----"
+					],
+					"intermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIJANi+rZL2Q5pmMAoGCCqGSM49BAMCMFYxEDAOBgNVBAMMB1JPT1QgQ0Ex\r\nETAPBgNVBAoMCG9yZzEuY29tMRAwDgYDVQQHDAdCZWlqaW5nMRAwDgYDVQQIDAdCZWlqaW5nMQsw\r\nCQYDVQQGEwJDTjAeFw0xODA2MTIwMzUxNDRaFw0yODA2MTIwMzUxNDRaMF4xGDAWBgNVBAMMD0lO\r\nVEVSTUVESUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNV\r\nBAgMB0JlaWppbmcxCzAJBgNVBAYTAkNOMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWkh/NumY\r\nc9VjeJx3agnW1E9okrsWxQNEbBRtMOEzrz3tuSTAdhlvVeTUVZPR2/fX0lT1mGbaIZ0aT6Bcl9Wv\r\nZqN3MHUwEgYDVR0TAQH/BAgwBgEB/wIBAzAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0lBAgwBgYEVR0l\r\nADAfBgNVHSMEGDAWgBTssEB5vhHmXgpccRv1GVi1i5clrzAdBgNVHQ4EFgQU2pF2/CDET94si6Cj\r\nKnV1F2PLie4wCgYIKoZIzj0EAwIDSAAwRQIhAJ8X9BwzHKzXw6loHyEgfHevqzL5V/wKZ5+l3ebE\r\nCTAuAiB/YboSAy7zH1dB6tBudGL/yVZHMsS/93Avf9A8MjUXaw==\n-----END CERTIFICATE-----"
+					],
+					"tlsCaCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICITCCAcegAwIBAgIJAOrwQJ6VJxPBMAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wIBcNMTgwNjEyMDM1MTQ0WhgPMjExODA2MTIwMzUxNDRaMFoxFDASBgNV\r\nBAMMC1RMUyBST09UIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4G\r\nA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQSzCKP\r\npPy2+URp/dr3gxBeOQCaaHjU3pQoriuTvAP/SBvrdRJCInepPaKzilREScWNZDappZoVBLO92S9J\r\nWYawo3QwcjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBtjAPBgNVHSUECDAGBgRVHSUA\r\nMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBQhmOU97XM3XBzGGloz\r\ncJsGEBXZFzAKBggqhkjOPQQDAgNIADBFAiAnvfLU+iDZzQlsMAZQ3DfOOQNIEhElbWi5xbkyqgor\r\nfAIhALvTL2KmaXutoDzjlL3saWPK96aCiWB+gZiGv+rW8TX0\n-----END CERTIFICATE-----"
+					],
+					"tlsIntermediateCerts": [
+						"-----BEGIN CERTIFICATE-----\nMIICKzCCAdCgAwIBAgIJALYA+q5Lw6x4MAoGCCqGSM49BAMCMFoxFDASBgNVBAMMC1RMUyBST09U\r\nIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamluZzEQMA4GA1UECAwHQmVpamlu\r\nZzELMAkGA1UEBhMCQ04wHhcNMTgwNjEyMDM1MTQ0WhcNMjgwNjEyMDM1MTQ0WjBiMRwwGgYDVQQD\r\nDBNUTFMgSU5URVJNRURJQVRFIENBMREwDwYDVQQKDAhvcmcxLmNvbTEQMA4GA1UEBwwHQmVpamlu\r\nZzEQMA4GA1UECAwHQmVpamluZzELMAkGA1UEBhMCQ04wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC\r\nAATQka7O4p8N1FbtBSbtFIsb9KztAgbWdCsYduO0y0h+ttTLtgM1qLdCLnH4jQCzolyep0qL36QP\r\nx/MIdSqzSij+o3cwdTASBgNVHRMBAf8ECDAGAQH/AgEDMA4GA1UdDwEB/wQEAwIBhjAPBgNVHSUE\r\nCDAGBgRVHSUAMB8GA1UdIwQYMBaAFCGY5T3tczdcHMYaWjNwmwYQFdkXMB0GA1UdDgQWBBR0V4PS\r\nwrY9KGq3BxGxgM88nkrs3jAKBggqhkjOPQQDAgNJADBGAiEA4T6ehq4F5fA6wbC9iT9v3BNhpsw/\r\ngxgwIpJBO09YYugCIQCZcLvDfkTQz/hdqHNQtSYrEAcl8ZOTWp8RDqxuGepo1A==\n-----END CERTIFICATE-----"
+					],
+					"crls": []
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "2.3、  获取一个参与方连接信息",
+		"path": "http://localhost:8090/channel-management/msps/org1.com",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "2.4、  获取所有参与方连接信息",
+		"path": "http://localhost:8090/channel-management/msps/",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "3.1.1、创建排序节点，consortiums.id、consortiums.mspIds、orderer.ordererAddresses、orderer.adminPolicy、orderer.kafkaBrokerAddresses、orderer.mspIds、字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "",
+							"mspIds": []
+						}
+					],
+					"orderer": {
+						"adminPolicy": "",
+						"batchSize": 10,
+						"batchTimeout": 2,
+						"kafkaBrokerAddresses": [],
+						"mspIds": [],
+						"ordererAddresses": []
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "3.1.2、创建排序节点，orderer.batchSize、orderer.batchTimeout取值小于1，应返回结果：排序节点配置区块配置异常",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "consortium1",
+							"mspIds": [
+								"org1.com"
+							]
+						}
+					],
+					"orderer": {
+						"adminPolicy": "Majority",
+						"batchSize": 0,
+						"batchTimeout": 0,
+						"kafkaBrokerAddresses": [
+							{
+								"host": "kafaka0",
+								"port": 9092
+							}
+						],
+						"mspIds": [
+							"org1.com"
+						],
+						"ordererAddresses": [
+							{
+								"host": "127.0.0.1",
+								"port": 7050
+							}
+						]
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4403
+	},
+	{
+		"name": "3.1.3、创建排序节点，consortiums.mspIds、orderer.mspIds的mspId不存在数据库，应返回结果：MSP未找到",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "consortium1",
+							"mspIds": [
+								"bak-mspId"
+							]
+						}
+					],
+					"orderer": {
+						"adminPolicy": "Majority",
+						"batchSize": 10,
+						"batchTimeout": 2,
+						"kafkaBrokerAddresses": [
+							{
+								"host": "kafaka0",
+								"port": 9092
+							}
+						],
+						"mspIds": [
+							"bak-mspId"
+						],
+						"ordererAddresses": [
+							{
+								"host": "127.0.0.1",
+								"port": 7050
+							}
+						]
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4215
+	},
+	{
+		"name": "3.1.4、创建排序节点，orderer.adminPolicy字段为非majority、all、any，应返回结果：排序节点配置区块配置异常",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "consortium1",
+							"mspIds": [
+								"org1.com"
+							]
+						}
+					],
+					"orderer": {
+						"adminPolicy": "bad-policy",
+						"batchSize": 10,
+						"batchTimeout": 2,
+						"kafkaBrokerAddresses": [
+							{
+								"host": "kafaka0",
+								"port": 9092
+							}
+						],
+						"mspIds": [
+							"org1.com"
+						],
+						"ordererAddresses": [
+							{
+								"host": "127.0.0.1",
+								"port": 7050
+							}
+						]
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4403
+	},
+	{
+		"name": "3.1.5、创建排序节点，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "consortium1",
+							"mspIds": [
+								"org1.com"
+							]
+						}
+					],
+					"orderer": {
+						"adminPolicy": "Majority",
+						"batchSize": 10,
+						"batchTimeout": 2,
+						"kafkaBrokerAddresses": [
+							{
+								"host": "kafaka0",
+								"port": 9092
+							}
+						],
+						"mspIds": [
+							"org1.com"
+						],
+						"ordererAddresses": [
+							{
+								"host": "127.0.0.1",
+								"port": 7050
+							}
+						]
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "3.1.6、创建排序节点，已创建，应返回结果：排序节点配置区块已存在",
+		"path": "http://localhost:8090/channel-management/orderers/genesisBlock",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "msp",
+				"data": {
+					"consortiums": [
+						{
+							"id": "consortium1",
+							"mspIds": [
+								"org1.com"
+							]
+						}
+					],
+					"orderer": {
+						"adminPolicy": "Majority",
+						"batchSize": 10,
+						"batchTimeout": 2,
+						"kafkaBrokerAddresses": [
+							{
+								"host": "kafaka0",
+								"port": 9092
+							}
+						],
+						"mspIds": [
+							"org1.com"
+						],
+						"ordererAddresses": [
+							{
+								"host": "127.0.0.1",
+								"port": 7050
+							}
+						]
+					}
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4214
+	},
+	{
+		"name": "3.2.1、 设置排序节点信息name、url字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "",
+					"tlsCert": "string",
+					"url": ""
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "3.2.2、 设置排序节点信息当url以grpcs://开头时tlsCert字段不存在或为空，应返回结果：参数为空",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "endorse.org1.com",
+					"tlsCert": "",
+					"url": "grpcs://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "3.2.3、 设置排序节点信息name和tlsCert证书cn值不相同，应返回结果：节点名称错误，与TLS证书CN不一致",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "org2",
+					"tlsCert": "-----BEGIN CERTIFICATE-----\nMIICSzCCAfCgAwIBAgIIUqISW7ol8xYwCgYIKoZIzj0EAwIwYjEcMBoGA1UEAwwTVExTIElOVEVS\r\nTUVESUFURSBDQTERMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgM\r\nB0JlaWppbmcxCzAJBgNVBAYTAkNOMB4XDTE4MDYxMjAzNTUwMVoXDTI4MDYxMjAzNTUwMVowYDER\r\nMA8GA1UECgwIb3JnMS5jb20xEDAOBgNVBAcMB0JlaWppbmcxEDAOBgNVBAgMB0JlaWppbmcxCzAJ\r\nBgNVBAYTAkNOMRowGAYDVQQDDBFlbmRvcnNlci5vcmcxLmNvbTBZMBMGByqGSM49AgEGCCqGSM49\r\nAwEHA0IABA5gDU/KFAIHpFb5ikKjbVyV0LqaQZLb3Spk7cSpHzkTtGQMNH+B1xExx1+p+8iianFq\r\nCZonfBPWr2yQYovhIrmjgZEwgY4wDwYDVR0RBAgwBocECbo4RzAdBgNVHSUEFjAUBggrBgEFBQcD\r\nAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHwYDVR0jBBgwFoAUdFeD\r\n0sK2PShqtwcRsYDPPJ5K7N4wHQYDVR0OBBYEFB/Yg3IhQKNNVyEGsOGDnXMFYsEyMAoGCCqGSM49\r\nBAMCA0kAMEYCIQDJBzYT5X787LOfKuSCBGKo90bnG3GL2mz975cKu3es4gIhAIMhA8aJ74zIOGrm\r\na2stCkqu5MA7j6Ib56nlD1kIcMnB\n-----END CERTIFICATE-----",
+					"url": "grpcs://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4217
+	},
+	{
+		"name": "3.2.4、 设置排序节点信息tlsCert证书格式错误，应返回结果：节点证书格式错误",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "org2",
+					"tlsCert": "bad-cert",
+					"url": "grpc://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4219
+	},
+	{
+		"name": "3.2.5、 设置排序节点信息，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+                    "name": "orderer.org1.com",
+					"url": "grpc://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "3.2.6、 设置排序节点信息，应返回结果：排序节点已存在",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "orderer.org1.com",
+					"url": "grpc://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4221
+	},
+	{
+		"name": "3.3.1、 更新排序节点信息，name不存在数据库，应返回结果：排序节点未找到",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "xxxxxx",
+					"url": "grpc://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4220
+	},
+	{
+		"name": "3.3.2、 更新排序节点信息，参数校验同设置排序节点3.2.1、3.2.2、3.2.3、3.2.4",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "",
+					"tlsCert": "string",
+					"url": ""
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "3.3.3、 更新排序节点信息，应返回结果：成功",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "orderer",
+				"data": {
+					"name": "orderer.org1.com",
+					"url": "grpc://127.0.0.1:7050"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "3.4、  获取一个排序节点连接信息",
+		"path": "http://localhost:8090/channel-management/orderers/orderer.org1.com",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "3.5、  获取所有排序节点连接信息",
+		"path": "http://localhost:8090/channel-management/orderers/",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "4.1.1、 设置peer节点信息，参数校验同设置排序节点3.2.1、3.2.2、3.2.3、3.2.4",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "",
+					"tlsCert": "string",
+					"url": ""
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "4.1.2、 设置peer节点信息，成功",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "endorser.org1.com",
+					"tlsCert": "",
+					"url": "grpc://127.0.0.1:7051"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "4.1.3、 设置peer节点信息，应返回结果：peer节点已存在",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "post",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "endorser.org1.com",
+					"tlsCert": "",
+					"url": "grpc://127.0.0.1:7051"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4223
+	},
+	{
+		"name": "4.2.1、 更新peer节点信息，参数校验同设置排序节点3.2.1、3.2.2、3.2.3、3.2.4",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "",
+					"tlsCert": "string",
+					"url": ""
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4001
+	},
+	{
+		"name": "4.2.2、 更新peer节点信息，应返回结果：peer节点未找到",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "xxxxxx",
+					"tlsCert": "",
+					"url": "grpc://127.0.0.1:7051"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 4222
+	},
+	{
+		"name": "4.2.3、 更新peer节点信息，成功",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "put",
+		"parameters": [
+			{
+				"paramType": "json",
+				"name": "peer",
+				"data": {
+					"name": "endorser.org1.com",
+					"tlsCert": "",
+					"url": "grpc://127.0.0.1:7051"
+				}
+			}
+		],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "4.3、  获取一个peer节点连接信息",
+		"path": "http://localhost:8090/channel-management/peers/endorser.org1.com",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	},
+	{
+		"name": "4.4、  获取所有peer节点连接信息",
+		"path": "http://localhost:8090/channel-management/peers/",
+		"type": "get",
+		"parameters": [],
+		"record": [],
+		"expCode": 200
+	}
+]
