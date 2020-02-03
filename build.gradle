@@ -1,0 +1,30 @@
+ // 含root project
+allprojects {
+    apply plugin: 'eclipse'
+    
+	group = 'com.taifu.util'
+    version = '0.1'
+}
+// 只含子项目
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'project-report'
+
+    repositories {
+        mavenLocal()
+        maven {
+            url = 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
+
+    dependencies {
+        implementation 'org.projectlombok:lombok:1.18.6'
+        implementation 'com.google.code.gson:gson:2.8.5'
+    }
+    
+    sourceCompatibility = '12'
+    
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+}

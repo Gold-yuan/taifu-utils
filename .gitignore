@@ -1,0 +1,15 @@
+# 
+.classpath
+.project
+.gradle
+.settings
+*.class
+*.log
+
+/log
+/logs
+/*/bin
+/*/build
+/*/target
+/*/log
+/*/logs

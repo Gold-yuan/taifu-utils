@@ -1,0 +1,12 @@
+server:
+  port: 9081
+eureka:
+  client:
+    registerWithEureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://192.168.1.165:9081/eureka/
+  instance:
+    hostname: owg-eureka-server
+  server:
+    eviction-interval-timer-in-ms: 5000
